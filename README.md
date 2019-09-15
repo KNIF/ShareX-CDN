@@ -13,6 +13,10 @@
 9. Click on `Test` to check if everything is working correctly.
 10. Done! That's it. If something doesn't quite work out for you just contact me on Discord and I'll try my best to help you.
 
+## Contact
+- Discord: `KNIF#0001`
+- Email: `admin@knif.dev`
+
 ## Credits
 - [Statuspage](https://better-error-pages.statuspage.io) for their amazing error 404 & 403 templates
 - [Pengu](https://youtu.be/9jcof4MACM0) for his initial ShareX uploader script I used as a base
