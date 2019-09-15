@@ -8,18 +8,10 @@ $length = 5;                               // The length of the folder & filenam
 
 // Don't touch anything further than this if you don't know what you're doing!
 
-$sharexdir = $_POST['type']."/".RandomString($length)."/";
-
-function RandomString($length) {
-    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    $charactersLength = strlen($characters); $randomString = '';
-    for ($i = 0; $i < $length; $i++) { $randomString .= $characters[rand(0, $charactersLength - 1)]; }
-    return $randomString;
-}
-
 if (isset($_POST['password'])) {
     if ($_POST['password'] == $password) {
         if (isset($_POST['type'])) {
+            $sharexdir = $_POST['type']."/".RandomString($length)."/";
             if (!file_exists($sharexdir)) {
                 mkdir($sharexdir, 0705, true);
                 copy($_POST['type'].'/index.html', $sharexdir.'index.html');
@@ -38,5 +30,12 @@ if (isset($_POST['password'])) {
         echo 'Wrong password.';
 } else
     echo 'No POST data recieved.';
+
+function RandomString($length) {
+    $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    $charactersLength = strlen($characters); $randomString = '';
+    for ($i = 0; $i < $length; $i++) { $randomString .= $characters[rand(0, $charactersLength - 1)]; }
+    return $randomString;
+}
 
 ?>
