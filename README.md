@@ -2,7 +2,7 @@
  Basic image, text & file uploader CDN for [ShareX](https://getsharex.com)
 
 ## Requirements
-- ShareX installed
+- [ShareX](https://getsharex.com) installed
 - A website or webserver (needs to accept PHP and file uploads via POST requests)
 - A domain or subdomain
 
