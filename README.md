@@ -25,7 +25,7 @@
 
 Done! That's it. If something doesn't quite work out for you just contact me on Discord and I'll try my best to help you.
 
-## Issues
+## Issue
 If you get an upload failed error "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
 
 ## Contact
