@@ -1,5 +1,7 @@
 <?php
 
+// Configure your CDN.
+
 $password = "MySecretPassword";            // Your password prevents others from using your CDN.
 $domain_url = 'https://cdn.domain.tld/';   // Make sure it has a "/" at the end of the domain!
 $length = 5;                               // The length of the folder & filename.
