@@ -1,4 +1,4 @@
-![](https://i.imgur.com/JyhRykm.png)
+# ![](https://i.imgur.com/JyhRykm.png)
 
  Basic image, text & file uploader CDN for [ShareX](https://getsharex.com) which allows you to upload your screenshots, text documents and any other files to your website and have a random link generated. Because of the length these links are very hard to bruteforce.
 
