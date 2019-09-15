@@ -14,7 +14,7 @@
 4. Edit line 5, 6 and 7 to change your password and link (read the comments next to them).
 	- Password: this only lets users with the password upload files to your server
 	- Domain URL: set this to your domain (or subdomain) and don't forget the `/` at the end of the line
-	- Length: this specifies the length of the randomly generated folder- & filenames (e.g. https://cdn.knif.dev/img/3lfUh/S1E7M.png has a length of 5)
+	- Length: this specifies the length of the randomly generated folder- & filenames (e.g. https://cdn.knif.dev/img/3lfUh/S1E7M.png has a length of 5 (the URL starts with the domain, then `/img/`, a random folder name with the length you specified and a random file name with the specified length))
 5. Upload the content of the `Upload` folder to the root directory of your website (I prefer to make a subdomain called "cdn" and put the folder to its directory).
 ### ShareX
 1. Open all three `.sxcu` files from the `ShareX-Config` folder with a Notepad++ and change the `RequestURL` and `password` to your own.
