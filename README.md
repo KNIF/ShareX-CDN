@@ -1,6 +1,10 @@
 # ShareX-CDN
  Basic image, text & file uploader CDN for [ShareX](https://getsharex.com)
 
+## Requirements
+- A website or webserver (needs to accept PHP and file uploads via POST requests)
+- A domain or subdomain
+
 ## Setup
 1. Clone the code from GitHub
 2. Open `upload.php` with any text editor (Notepad++ preferred)
