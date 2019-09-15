@@ -18,6 +18,9 @@
 9. Click on `Test` to check if everything is working correctly.
 10. Done! That's it. If something doesn't quite work out for you just contact me on Discord and I'll try my best to help you.
 
+## Issues
+- If you get an upload failed error with "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
+
 ## Contact
 - Discord: `KNIF#0001`
 - Email: `admin@knif.dev`
