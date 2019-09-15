@@ -1,0 +1,13 @@
+﻿{
+  "Version": "12.4.1",
+  "Name": "Text",
+  "DestinationType": "TextUploader",
+  "RequestMethod": "POST",
+  "RequestURL": "https://cdn.domain.tld/upload.php",
+  "Body": "MultipartFormData",
+  "Arguments": {
+    "password": "MySecretPassword",
+    "type": "txt"
+  },
+  "FileFormName": "file"
+}
