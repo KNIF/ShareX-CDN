@@ -275,7 +275,7 @@
 
     .background-image {
       background-color: #FFFFFF;
-      background-image: url(https://upload.dedev.io/pattern_bg.png) !important;
+      background-image: url(assets/pattern_bg.png) !important;
     }
 
     .primary-text-color {
@@ -327,16 +327,33 @@
     <div class="context secondary-text-color">
       <p>
         You may want to head back to the homepage.
-        If you think something is broken, report a problem.
       </p>
-    </div>
-    <div class="buttons-container">
-      <a class="button" href="https:/knif.dev"><span class="fa fa-home"></span> Go to homepage</a>
-      <a class="button" href="mailto:admin@knif.dev"><span class="fa fa-warning"></span> Report a problem</a>
     </div>
   </div>
 </center>
 
+<style>
+.footer {
+   position: fixed;
+   text-align: center;
+   bottom: 0px;
+   width: 100%;
+ }
+
+ .footerLink {
+   text-decoration:none;
+   color: #DDDDDD;
+ }
+
+ .footerLink:hover {
+   color: #FF0000;
+ }
+
+ .footerLink:visited {
+   color: #EEEEEE;
+ }
+</style>
+<div class="footer secondary-text-color"><a href="https://github.com/MauriceHuber/ShareX-CDN" class="footerLink" target="_blank">ShareX-CDN</a> Copyright © 2019 <a href="https://github.com/MauriceHuber" class="footerLink" target="_blank">MauriceHuber</a></div>
 
     <script>
      function ErrorPage(container, pageType, templateName) {
@@ -451,6 +468,6 @@
      });
 
     </script>
-  
+
   </body>
 </html>
