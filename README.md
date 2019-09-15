@@ -1,5 +1,5 @@
 # ShareX-CDN
- Basic image, text & file uploader CDN for ShareX
+ Basic image, text & file uploader CDN for [ShareX](https://getsharex.com)
 
 ## Setup
 1. Clone the code from GitHub
