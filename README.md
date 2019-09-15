@@ -12,6 +12,9 @@
 2. Go in the `Upload` folder.
 3. Open `upload.php` with Notepad++.
 4. Edit line 5, 6 and 7 to change your password and link (read the comments next to them).
+- Password: this only lets users with the password upload files to your server
+- Domain URL: set this to your domain (or subdomain) and don't forget the `/` at the end of the line
+- Length: this specifies the length of the randomly generated folder- & filenames (e.g. https://cdn.knif.dev/img/3lfUh/S1E7M.png has a length of 5)
 5. Upload the content of the `Upload` folder to the root directory of your website (I prefer to make a subdomain called "cdn" and put the folder to its directory).
 ### ShareX
 1. Open all three `.sxcu` files from the `ShareX-Config` folder with a Notepad++ and change the `RequestURL` and `password` to your own.
@@ -23,7 +26,7 @@
 Done! That's it. If something doesn't quite work out for you just contact me on Discord and I'll try my best to help you.
 
 ## Issues
-- If you get an upload failed error "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
+If you get an upload failed error "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
 
 ## Contact
 - Discord: `KNIF#0001`
