@@ -12,7 +12,7 @@
 1. Clone the code from GitHub.
 2. Go in the `Upload` folder.
 3. Open `upload.php` with Notepad++.
-4. Edit line 5, 6 and 7 to change your password and link (read the comments next to them).
+4. Edit line 7, 8 and 9 to change your password and link (read the comments next to them).
 	- Password: this only lets users with the password upload files to your server
 	- Domain URL: set this to your domain (or subdomain) and don't forget the `/` at the end of the line
 	- Length: this specifies the length of the randomly generated folder- & filenames (e.g. https://cdn.knif.dev/img/3lfUh/S1E7M.png has a length of 5 (the URL starts with the domain, then `/img/`, a random folder name with the length you specified (in this case `5`), a random file name with the specified length (in this case `5`) and the extension (in this case `.png`)))

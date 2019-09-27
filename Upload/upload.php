@@ -1,5 +1,7 @@
 <?php
 
+error_reporting(0); // Disables unknown errors
+
 // Configure your CDN.
 
 $password = "MySecretPassword";            // Your password prevents others from using your CDN.
