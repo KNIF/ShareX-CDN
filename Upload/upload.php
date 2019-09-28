@@ -10,6 +10,10 @@ $length = 5;                               // The length of the folder & filenam
 
 // Don't touch anything further than this if you don't know what you're doing!
 
+if ($_SERVER["REQUEST_METHOD"] != "POST") {
+    die("You shouldn't be here.");
+}
+
 if (isset($_POST['password'])) {
     if ($_POST['password'] == $password) {
         if (isset($_POST['type'])) {
