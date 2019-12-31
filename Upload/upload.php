@@ -7,6 +7,9 @@ error_reporting(0);                        // Disables errors.
 $password = "MySecretPassword";            // Your password prevents others from using your CDN.
 $domain_url = 'https://cdn.domain.tld/';   // Make sure it has a "/" at the end of the domain!
 $length = 5;                               // The length of the folder & filename.
+$allowed = [                               // Allowed file extensions (without "." postfix)
+    'png', 'jpg', 'jpeg', 'gif'
+];
 
 // Don't touch anything further than this if you don't know what you're doing!
 
@@ -24,11 +27,14 @@ if (isset($_POST['password'])) {
             $filename = RandomString($length);
             $target_file = $_FILES["file"]["name"];
             $fileType = pathinfo($target_file, PATHINFO_EXTENSION);
-
-            if (move_uploaded_file($_FILES["file"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
-                echo $domain_url.$sharexdir.$filename.'.'.$fileType;
-            else
-                echo 'File upload failed.';
+            if (!in_array($fileType, $allowed))
+                echo 'Forbidden file type.';
+            else {
+                if (move_uploaded_file($_FILES["file"]["tmp_name"], $sharexdir.$filename.'.'.$fileType))
+                    echo $domain_url.$sharexdir.$filename.'.'.$fileType;
+                else
+                    echo 'File upload failed.';
+            }
         } else
             echo 'No file type recieved.';
     } else
