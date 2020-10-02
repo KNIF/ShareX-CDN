@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] != 'POST') {
 if (isset($_POST['password'])) {
 	if ($_POST['password'] == $password) {
 		if (isset($_POST['type'])) {
-			$sharexdir = $_POST['type'].'/'.RandomString($length).'/';
+			$sharexdir = $_POST['type'].'/';
 			if (!file_exists($sharexdir)) {
 				mkdir($sharexdir, 0755, true);
 				copy($_POST['type'].'/index.html', $sharexdir.'index.html');
