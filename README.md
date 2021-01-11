@@ -33,8 +33,8 @@ If you get an upload failed error "request entity too large" then your server do
 
 ## Contact
 Please only contact for this specific fork, for the original fork, contact [KNIF](https://github.com/KNIF/ShareX-CDN)
-- Discord: `Fabio A.#6301`
-- Email: `fabio@grounddug.xyz`
+- Discord: `Fabio A.#0001`
+- Email: `me@fabioalmeida.dev`
 
 ## Credits
 - [Statuspage](https://better-error-pages.statuspage.io) for their amazing error 404 & 403 templates
