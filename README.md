@@ -17,6 +17,8 @@
 	- Domain URL: set this to your domain (or subdomain) and don't forget the `/` at the end of the line
 	- Length: this specifies the length of the randomly generated folder- & filenames (e.g. https://cdn.knif.dev/img/3lfUh/S1E7M.png has a length of 5 (the URL starts with the domain, then `/img/`, a random folder name with the length you specified (in this case `5`), a random file name with the specified length (in this case `5`) and the extension (in this case `.png`)))
 5. Upload the content of the `Upload` folder to the root directory of your website (I prefer to make a subdomain called "cdn" and put the folder to its directory).
+6. Make sure that sub-folders have permissions set to 755 (and Group ID set to 33 if applicable), with the upload.php script having permissions of 777.
+
 ### ShareX
 1. Open all three `.sxcu` files from the `ShareX-Config` folder with a Notepad++ and change the `RequestURL` and `password` to your own.
 2. Open ShareX, click on `Destinations` and `Custom uploader settings`.
@@ -30,10 +32,12 @@ Done! That's it. If something doesn't quite work out for you just contact me on 
 If you get an upload failed error "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
 
 ## Contact
-- Discord: `KNIF#0001`
-- Email: `admin@knif.dev`
+Please only contact for this specific fork, for the original fork, contact [KNIF](https://github.com/KNIF/ShareX-CDN)
+- Discord: `Fabio A.#0001`
+- Email: `me@fabioalmeida.dev`
 
 ## Credits
 - [Statuspage](https://better-error-pages.statuspage.io) for their amazing error 404 & 403 templates
 - [Pengu](https://youtu.be/9jcof4MACM0) for his initial ShareX uploader script I used as a base
 - [ShareX](https://getsharex.com) for their awesome program that enables us to upload our screenshots
+- [KNIF](https://github.com/KNIF) for his original ShareX uploader script, which I made some modifications to
