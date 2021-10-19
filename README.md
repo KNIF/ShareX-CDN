@@ -32,19 +32,17 @@ Basic image, text & file uploader CDN for [ShareX](https://getsharex.com) which 
 
 Done! That's it. If something doesn't quite work out for you just contact me on Discord and I'll try my best to help you.
 
-## Issue
+# What to do if I can't get it to work?
 
-If you get an upload failed error "request entity too large" then your server doesn't accept large files via PHP upload. Here is the fix: [Increase PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits). If you can't increase it yourself you have to contact your hosting provider.
+I created this project a few years ago and it is really hard to get it working with all these different NGINX/Apache configurations, so just try a few things before giving up.
 
-## Contact
+If you get an upload failed because of "error: request entity too large" your server doesn't accept large files via PHP upload. You can fix this issue by [increasing your PHP upload limit](https://mediatemple.net/community/products/dv/204404784/how-do-i-increase-the-php-upload-limits).
+If you can't increase it yourself you have to contact your hosting provider to do it for you.
 
-- Discord: `Maurice#5247`
-- Email: `admin@knif.dev`
+Also maybe the script doesn't have enough permissions to create the files/folders correctly.
+Try to change the permissions of all files and folders in the upload dir to `755` or `777`.
 
-Please only contact for this specific fork, for the original fork, contact [KNIF](https://github.com/KNIF/ShareX-CDN)
-
-- Discord: `Fabio A.#0001`
-- Email: `me@fabioalmeida.dev`
+**If you still can't get it working just try to use the built in FTP uploader in ShareX, it's way easier to setup than this project 😉**
 
 ## Credits
 
